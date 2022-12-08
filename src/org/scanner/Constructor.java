@@ -11,6 +11,9 @@ public class Constructor {
 		c=a+b;
 		System.out.println(c);
 }
+	public void test() {
+System.out.println("test");
+	}
 	public Constructor(int d,int e,int f) {
 		this(d, e);
 		System.out.println(f);

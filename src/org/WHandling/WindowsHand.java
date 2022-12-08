@@ -13,6 +13,7 @@ public class WindowsHand {
 		System.setProperty("webdriver.chrome.driver", "C:\\eclipse\\Practice\\driver\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.get("https://www.flipkart.com/");
+	
 		
 		WebElement txtSearch = driver.findElement(By.xpath("//input[@name='q']"));
 		txtSearch.sendKeys("iphone",Keys.ENTER);
@@ -24,14 +25,22 @@ public class WindowsHand {
 		Set<String> allWId = driver.getWindowHandles();
 		System.out.println(allWId);
 		
+	
+		
+		System.out.println("addding method");
+		System.out.println("Again adding method");
 		for (String eachWid : allWId) {
 			if (!parrentWId.equals(eachWid)) {
 			driver.switchTo().window(eachWid);	
 			}
+		
 		}
 		WebElement btnAddToKart = driver.findElement(By.xpath("//button[@class='_2KpZ6l _2U9uOA _3v1-ww']"));
 		btnAddToKart.click();
 	    
+	}
+	private void tc1() {
+    System.out.println("admin");
 	}
 
 }

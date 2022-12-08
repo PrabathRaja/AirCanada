@@ -11,13 +11,21 @@ public class Constructor {
 		c=a+b;
 		System.out.println(c);
 }
-	public void test() {
-System.out.println("test");
+
+	private void syso() {
+	}
+	
+	
+	public static void main(String[] args) {
+		System.out.println("adding");
 	}
 	public Constructor(int d,int e,int f) {
 		this(d, e);
 		System.out.println(f);
 	}
+	public void test() {
+		System.out.println("test");
+			}
 	//public static void main(String[] args) {
 	//	Constructor con=new Constructor();
 	//	Constructor con2=new Constructor(10, 20);

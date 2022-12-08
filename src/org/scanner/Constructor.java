@@ -11,6 +11,14 @@ public class Constructor {
 		c=a+b;
 		System.out.println(c);
 }
+	private void syso() {
+	}
+	
+	
+	public static void main(String[] args) {
+		System.out.println("adding");
+	}
+	
 	public Constructor(int d,int e,int f) {
 		this(d, e);
 		System.out.println(f);
